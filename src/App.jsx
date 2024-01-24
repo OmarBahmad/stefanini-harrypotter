@@ -1,12 +1,11 @@
-import { useState } from 'react'
+import { MainPage } from "./components/pages/MainPage/MainPage";
 
 function App() {
-
   return (
     <>
-      <h1>Hello World</h1>
+      <MainPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
