@@ -76,7 +76,12 @@
 
 @include media-query(tablet) {
   .home-page {
+    min-height: 90vh;
+    &__cards {
+      margin-top: 50px;
+    }
     &__button {
+      margin-top: 80px;
       .button {
         font-size: 270%;
         &--principal {
@@ -121,7 +126,12 @@
 
 @include media-query(mobile) {
   .home-page {
+    min-height: 90vh;
+    &__cards {
+      margin-top: 50px;
+    }
     &__button {
+      margin-top: 80px;
       .button {
         font-size: 270%;
         &--principal {

@@ -31,6 +31,7 @@ export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
         </div>
         <div className="flip-card-back">
           <div className="details">
+            <span className="details__title">{character.name}</span>
             <span>
               Nascimento:{" "}
               {character.dateOfBirth ? character.dateOfBirth : "Desconhecido"}
