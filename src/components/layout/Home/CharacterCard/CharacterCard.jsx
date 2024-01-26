@@ -38,7 +38,7 @@ export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
               Casa: {character.house ? character.house : "Desconhecido"}
             </span>
             <span>
-              Patrono:{" "}
+              Patrono:{""}
               {character.patronus ? character.patronus : "Desconhecido"}
             </span>
           </div>
