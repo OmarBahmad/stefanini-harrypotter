@@ -8,7 +8,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 81vh;
+  justify-content: flex-start;
+  margin-top: 20px;
 
   &__title {
     margin-bottom: 1rem;
@@ -35,7 +37,7 @@
     .button {
       font-size: 270%;
       &--principal {
-        height: 100px;
+        height: 9.375rem;
         width: 99%;
         background-size: 100%;
         background-position-y: 50%;
@@ -43,29 +45,28 @@
 
       &--primary {
         width: 49%;
-        height: 150px;
+        height: 12.5rem;
         background-size: 100%;
         background-position-y: 43%;
       }
 
       &--secondary {
         width: 49%;
-        height: 150px;
+        height: 12.5rem;
         background-size: 100%;
-        background-position-y: 35%;
+        background-position-y: 30%;
       }
 
       &--tertiary {
         width: 49%;
-        height: 150px;
+        height: 12.5rem;
         background-size: 100%;
         background-position-y: 45%;
       }
 
       &--quaternary {
         width: 49%;
-        height: 150px;
-
+        height: 12.5rem;
         background-size: 100%;
         background-position-y: 36%;
       }
@@ -79,7 +80,7 @@
       .button {
         font-size: 270%;
         &--principal {
-          height: 100px;
+          height: 6.25rem;
           width: 99%;
           background-size: 100%;
           background-position-y: 50%;
@@ -87,28 +88,28 @@
 
         &--primary {
           width: 48.5%;
-          height: 150px;
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 43%;
         }
 
         &--secondary {
           width: 48.5%;
-          height: 150px;
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 35%;
         }
 
         &--tertiary {
           width: 48.5%;
-          height: 150px;
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 45%;
         }
 
         &--quaternary {
           width: 48.5%;
-          height: 150px;
+          height: 9.375rem;
 
           background-size: 100%;
           background-position-y: 36%;
@@ -124,7 +125,7 @@
       .button {
         font-size: 270%;
         &--principal {
-          height: 100px;
+          height: 6.25rem;
           width: 99%;
           background-size: 100%;
           background-position-y: 50%;
@@ -132,29 +133,28 @@
 
         &--primary {
           width: 47%;
-          height: 150px;
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 43%;
         }
 
         &--secondary {
           width: 47%;
-          height: 150px;
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 35%;
         }
 
         &--tertiary {
           width: 47%;
-          height: 150px;
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 45%;
         }
 
         &--quaternary {
           width: 47%;
-          height: 150px;
-
+          height: 9.375rem;
           background-size: 100%;
           background-position-y: 36%;
         }

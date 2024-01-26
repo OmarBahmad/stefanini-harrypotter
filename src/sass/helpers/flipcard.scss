@@ -1,6 +1,9 @@
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
+
 .flip-card {
   @extend .card !optional;
-  perspective: 1000px;
+  perspective: 62.5rem;
   cursor: pointer;
 
   &-inner {
@@ -43,14 +46,16 @@
     font-family: $font-secondary;
     padding: 1rem;
     box-sizing: border-box;
-    border-radius: 0.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0.1875rem 0.1875rem 0.3125rem $color-dark;
+
     .details{
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       align-items: flex-start;
       justify-content: center;
-      gap: 10px;
+      gap: 0.625rem;
     }
   }
 }

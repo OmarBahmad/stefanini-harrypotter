@@ -60,11 +60,9 @@ export const MainPage = () => {
     }
 
     return data.filter((item) => {
-      // Converte o nome do personagem e a busca para letras minúsculas
       const name = item.name.toLowerCase();
       const search = query.toLowerCase();
 
-      // Retorna verdadeiro se o nome contém a busca
       return name.includes(search);
     });
   };

@@ -14,7 +14,7 @@ export const MobileMenu = ({ items, onHouseSelected }) => {
   return (
     <div className={`mobile-menu-container `}>
       <FaBars size={35} onClick={() => setIsOpen(!isOpen)} />
-      {isOpen && ( // Renderiza o overlay somente se isOpen for verdadeiro
+      {isOpen && (
         <div className="overlay" onClick={() => setIsOpen(false)}></div>
       )}
       <div

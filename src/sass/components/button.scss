@@ -10,9 +10,9 @@
   transition: all 0.3s ease;
   font-family: $font-primary;
   min-height: 4.6875rem;
-  border: 1px solid $color-dark;
-  box-shadow: 3px 3px 5px $color-dark;
-  text-shadow: 2px 2px $color-dark;
+  border: 0.0625rem solid $color-dark;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem $color-dark;
+  text-shadow: 0.125rem 0.125rem $color-dark;
 
   &--principal {
     background-color: $color-light;
