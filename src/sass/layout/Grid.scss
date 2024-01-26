@@ -5,6 +5,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
 }
 
 .row {
@@ -28,7 +29,7 @@
 
 @include media-query(desktop) {
   .col-4 {
-    flex: 0 0 33.333333%;
+    flex: 0 0 22.2%;
     max-width: 33.333333%;
   }
 }
