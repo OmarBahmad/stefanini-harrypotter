@@ -5,4 +5,14 @@ import ViteSassPlugin from "vite-plugin-sass";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), ViteSassPlugin()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "./src/sass/abstracts/variables.scss";
+          @import "./src/sass/abstracts/mixins.scss";
+        `
+      }
+    }
+  },
 });
