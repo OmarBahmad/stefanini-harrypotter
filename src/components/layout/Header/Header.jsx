@@ -1,36 +1,48 @@
-import { useMediaQuery } from 'react-responsive';
-import { MobileMenu } from './MobileMenu/MobileMenu';
-import { NavLinks } from './NavLinks/NavLinks';
+import { useMediaQuery } from "react-responsive";
+import { MobileMenu } from "./MobileMenu/MobileMenu";
+import { NavLinks } from "./NavLinks/NavLinks";
+import { Search } from "./Search/Search";
+import "../../../sass/layout/Header.scss";
 
-export const Header = ({ onHouseSelected, onStudentsSelected, onStaffSelected }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+export const Header = ({ onHouseSelected, initialValue, onSearch }) => {
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   const menuItems = [
-    { label: 'Grifinória', house: 'gryffindor' },
-    { label: 'Sonserina', house: 'slytherin' },
-    { label: 'Corvinal', house: 'ravenclaw' },
-    { label: 'Lufa-Lufa', house: 'hufflepuff' },
-    { label: 'Hogwarts', house: '' },
+    { label: "Grifinória", house: "gryffindor", style: "primary" },
+    { label: "Sonserina", house: "slytherin", style: "secondary" },
+    { label: "Corvinal", house: "ravenclaw", style: "tertiary" },
+    { label: "Lufa-Lufa", house: "hufflepuff", style: "quaternary" },
+    { label: "Hogwarts", house: "", style: "principal" },
   ];
 
   return (
-    <header className="app-header">
-      {isMobile ? (
-        <MobileMenu items={menuItems} onHouseSelected={onHouseSelected} />
-      ) : (
-        <nav className={``}>
-          <NavLinks
-            items={menuItems}
-            onHouseSelected={onHouseSelected}
-            onStudentsSelected={onStudentsSelected}
-            onStaffSelected={onStaffSelected}
-          />
-        </nav>
-      )}
-
-      <div className="search-bar">
-        <input type="text" placeholder="Pesquisar..." />
-        <button>Buscar</button>
+    <header className="header">
+      <div className="container">
+        {isMobile ? (
+          <div className="mobile-menu">
+            <MobileMenu items={menuItems} onHouseSelected={onHouseSelected} />
+            <div className="header__logo">
+              <img
+                src="src/assets/images/logo-hp.png"
+                alt="harry-potter-logo"
+              />
+            </div>
+            <Search initialValue={initialValue} onSearch={onSearch} />
+          </div>
+        ) : (
+          <>
+            <div className="header__logo">
+              <img
+                src="src/assets/images/logo-hp.png"
+                alt="harry-potter-logo"
+              />
+            </div>
+            <nav className={"nav-link-container"}>
+              <NavLinks items={menuItems} onHouseSelected={onHouseSelected} />
+            </nav>
+            <Search initialValue={initialValue} onSearch={onSearch} />
+          </>
+        )}
       </div>
     </header>
   );

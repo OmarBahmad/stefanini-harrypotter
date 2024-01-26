@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+.nav-link-container {
+  display: flex;
+  direction: row;
+  gap: 0.8rem;
+  .button {
+    font-size: 1.5625rem;
+    min-height: 2.5rem;
+    letter-spacing: 0.05rem;
+  }
+}

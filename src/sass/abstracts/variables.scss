@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Harry Potter";
+  src: url("/src/assets/typography/harry_potter.woff2") format("woff2");
+}
+
+$font-primary: "Harry Potter", sans-serif;
+$font-secondary: "Arial", sans-serif;
+
+$color-primary: #333333;
+$color-secondary: #666666;
+$color-tertiary: #999999;
+$color-light: #ffffff;
+$color-dark: #000000;
+
+$color-gryffindor: #ae0001;
+$color-slytherin: #2a623d;
+$color-ravenclaw: #222f5b;
+$color-hufflepuff: #ecb939;
+
+$gryffindor: #740001;
+$slytherin: #1a472a;
+$ravenclaw: #0e1a40;
+$hufflepuff: #ecb939;
+
+$color-highlight: #ffba08;
+$color-info: #1e90ff;
+$color-success: #28a745; 
+$color-warning: #ffc107; 
+$color-danger: #dc3545; 
+
+$color-grey-light: #f0f0f0;
+$color-grey-dark: #282828;
+
+$gryffindor-light: lighten($gryffindor, 15%);
+$gryffindor-dark: darken($gryffindor, 15%);
+
+$slytherin-light: lighten($slytherin, 15%);
+$slytherin-dark: darken($slytherin, 15%);
+
+$ravenclaw-light: lighten($ravenclaw, 15%);
+$ravenclaw-dark: darken($ravenclaw, 15%);
+
+$hufflepuff-light: lighten($hufflepuff, 15%);
+$hufflepuff-dark: darken($hufflepuff, 15%);
+
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1200px;

@@ -1,0 +1,31 @@
+@import "../abstracts/variables.scss";
+
+.theme-dark {
+  background-color: $color-dark;
+  color: $color-light;
+}
+
+.theme-light {
+  background-color: $color-light;
+  color: $color-dark;
+}
+
+.house-gryffindor {
+  background-color: $color-gryffindor;
+  color: $color-light;
+}
+
+.house-slytherin {
+  background-color: $color-slytherin;
+  color: $color-light;
+}
+
+.house-ravenclaw {
+  background-color: $color-ravenclaw;
+  color: $color-light;
+}
+
+.house-hufflepuff {
+  background-color: $color-hufflepuff;
+  color: $color-dark;
+}

@@ -11,7 +11,7 @@ const fetchHouseCharacters = (house) => {
 export const useHouseCharacters = (house) => {
   const { data, isLoading, isError, error } = useQuery(
     ["houseCharacters", house],
-    () => fetchHouseCharacters(house)
+    () => house?fetchHouseCharacters(house):''
   );
 
   return { data, isLoading, isError, error };
