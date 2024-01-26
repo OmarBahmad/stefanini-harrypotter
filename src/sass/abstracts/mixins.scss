@@ -1,0 +1,23 @@
+@import "../abstracts/variables.scss";
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin media-query($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: ($breakpoint-mobile + 1)) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (min-width: ($breakpoint-mobile + 1)) and (max-width: ($breakpoint-tablet)) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: ($breakpoint-tablet + 1)) {
+      @content;
+    }
+  }
+}

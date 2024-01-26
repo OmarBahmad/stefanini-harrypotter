@@ -1,0 +1,82 @@
+@import "../abstracts/variables";
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 3rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: $font-primary;
+  min-height: 4.6875rem;
+  border: 1px solid $color-dark;
+  box-shadow: 3px 3px 5px $color-dark;
+  text-shadow: 2px 2px $color-dark;
+
+  &--principal {
+    background-color: $color-light;
+    color: $color-light;
+
+    background-image: url("/src/assets/images/hogwarts.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+
+    &:hover {
+      background-color: darken($color-light, 15%);
+    }
+  }
+
+  &--primary {
+    background-color: $color-gryffindor;
+    color: $color-light;
+    background-image: url("/src/assets/images/gryffindor.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 43%;
+
+    &:hover {
+      background-color: $gryffindor;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-slytherin;
+    color: $color-light;
+    background-image: url("/src/assets/images/slytheryn.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 25%;
+
+    &:hover {
+      background-color: $slytherin;
+    }
+  }
+
+  &--tertiary {
+    background-color: $color-ravenclaw;
+    background-image: url("/src/assets/images/ravenclaw.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 45%;
+    color: $color-light;
+
+    &:hover {
+      background-color: $ravenclaw;
+    }
+  }
+
+  &--quaternary {
+    background-color: $color-hufflepuff;
+    background-image: url("/src/assets/images/hufflepuff.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 36%;
+    color: $color-light;
+
+    &:hover {
+      background-color: $hufflepuff-dark;
+    }
+  }
+}
