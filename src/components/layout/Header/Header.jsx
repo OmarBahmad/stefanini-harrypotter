@@ -23,7 +23,7 @@ export const Header = ({ onHouseSelected, initialValue, onSearch }) => {
             <MobileMenu items={menuItems} onHouseSelected={onHouseSelected} />
             <div className="header__logo">
               <img
-                src="/assets/logohpt.png"
+                src="/src/assets/logohpt.png"
                 alt="harry-potter-logo"
               />
             </div>
@@ -33,7 +33,7 @@ export const Header = ({ onHouseSelected, initialValue, onSearch }) => {
           <>
             <a className="header__logo" href="/">
               <img
-                src="/assets/logohpt.png"
+                src="https://github.com/OmarBahmad/stefanini-harrypotter/blob/a42c49fc09246312e2aed133d237ece39739c24d/src/assets/logohpt.png"
                 alt="harry-potter-logo"
               />
             </a>

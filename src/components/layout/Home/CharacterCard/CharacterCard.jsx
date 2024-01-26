@@ -21,7 +21,7 @@ export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
             src={
               character.image
                 ? character.image
-                : "/assets/portait.jpeg"
+                : "https://github.com/OmarBahmad/stefanini-harrypotter/blob/a42c49fc09246312e2aed133d237ece39739c24d/src/assets/portait.jpeg"
             }
             alt={character.name}
           ></img>
