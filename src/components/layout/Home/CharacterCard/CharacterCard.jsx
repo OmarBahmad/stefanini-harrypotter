@@ -21,7 +21,7 @@ export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
             src={
               character.image
                 ? character.image
-                : "/src/assets/images/unknownportait.jpg"
+                : "/assets/images/unknownport.jpg"
             }
             alt={character.name}
           ></img>
