@@ -23,7 +23,7 @@ export const Header = ({ onHouseSelected, initialValue, onSearch }) => {
             <MobileMenu items={menuItems} onHouseSelected={onHouseSelected} />
             <div className="header__logo">
               <img
-                src="/src/assets/logohpt.png"
+                src="/logohpt.png"
                 alt="harry-potter-logo"
               />
             </div>
