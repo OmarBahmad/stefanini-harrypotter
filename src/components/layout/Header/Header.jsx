@@ -33,7 +33,7 @@ export const Header = ({ onHouseSelected, initialValue, onSearch }) => {
           <>
             <a className="header__logo" href="/">
               <img
-                src="https://github.com/OmarBahmad/stefanini-harrypotter/blob/a42c49fc09246312e2aed133d237ece39739c24d/src/assets/logohpt.png"
+                src="/logohpt.png"
                 alt="harry-potter-logo"
               />
             </a>

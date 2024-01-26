@@ -18,13 +18,10 @@ export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
         <div className="flip-card-front">
           <img
             className="card__image"
-            src={
-              character.image
-                ? character.image
-                : "https://github.com/OmarBahmad/stefanini-harrypotter/blob/a42c49fc09246312e2aed133d237ece39739c24d/src/assets/portait.jpeg"
-            }
+            src={character.image ? character.image : "/portait.jpeg"}
+            srcSet={character.image ? character.image : "/portait.jpeg"}
             alt={character.name}
-          ></img>
+          />
           <div className="card__content">
             <div className="card__content__title">{character.name}</div>
           </div>
