@@ -31,12 +31,12 @@ export const Header = ({ onHouseSelected, initialValue, onSearch }) => {
           </div>
         ) : (
           <>
-            <div className="header__logo">
+            <a className="header__logo" href="/">
               <img
                 src="src/assets/images/logo-hp.png"
                 alt="harry-potter-logo"
               />
-            </div>
+            </a>
             <nav className={"nav-link-container"}>
               <NavLinks items={menuItems} onHouseSelected={onHouseSelected} />
             </nav>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../../../../sass/components/card.scss';
+import "../../../../sass/components/card.scss";
 
 export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
   const [isCardFlipped, setIsCardFlipped] = useState(false);
@@ -18,20 +18,31 @@ export const CharacterCard = ({ character, handleFlip, isFlipped }) => {
         <div className="flip-card-front">
           <img
             className="card__image"
-            src={character.image ? character.image : ""}
+            src={
+              character.image
+                ? character.image
+                : "/src/assets/images/unknown-portait.jpg"
+            }
             alt={character.name}
           ></img>
           <div className="card__content">
-            <div className="card__title">{character.name}</div>
-            {/* Adicione aqui qualquer conteúdo adicional desejado */}
+            <div className="card__content__title">{character.name}</div>
           </div>
         </div>
         <div className="flip-card-back">
           <div className="details">
-            <span>Nascimento: {character.dateOfBirth}</span>
-            <span>Ator Vivo: {character.alive}</span>
-            <span>Casa: {character.house}</span>
-            <span>Patrono: {character.patronus}</span>
+            <span>
+              Nascimento:{" "}
+              {character.dateOfBirth ? character.dateOfBirth : "Desconhecido"}
+            </span>
+            <span>Ator Vivo: {character.alive ? "Sim" : "Não"}</span>
+            <span>
+              Casa: {character.house ? character.house : "Desconhecido"}
+            </span>
+            <span>
+              Patrono:{" "}
+              {character.patronus ? character.patronus : "Desconhecido"}
+            </span>
           </div>
         </div>
       </div>
