@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/OmarBahmad/projectunymos?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/OmarBahmad/projectunymos?style=for-the-badge)
 
-
+https://stefanini-harrypotter.vercel.app/
 
 ## Descrição
 Este projeto é uma aplicação web que consome dados de uma API externa, fornecendo informações detalhadas sobre os personagens da saga Harry Potter. A aplicação permite aos usuários filtrar os personagens por casa (Grifinória, Sonserina, Corvinal, Lufa-Lufa) e por nome. Cada personagem é exibido em um card na página principal, onde todos os detalhes relevantes são apresentados de forma clara e interativa. A interface do usuário é responsiva, garantindo uma experiência agradável em dispositivos de diferentes tamanhos.
